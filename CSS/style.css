@@ -1,0 +1,51 @@
+
+
+/*Grid Property*/
+#wrapper{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas: "header header header"
+                            "nav nav sidebar"
+                            "main main sidebar"
+                            "main main sidebar"
+                            "main main sidebar"
+                            "footer footer footer";
+
+    background-color: whitesmoke;
+   
+}
+/* Making the divs look better */
+div{border:1px solid black;}
+ 
+header{
+    font-size:60px;
+    text-align:center;
+        font-weight: bold;
+}
+
+#header{grid-area: header;
+    font-size:70px;
+    text-align: center;
+}
+
+#nav{grid-area: nav;
+font-size: 30px;
+
+}
+
+#main{grid-area: main;
+    
+font-size :20px;
+}
+
+#sidebar{grid-area: sidebar;}
+
+#footer{grid-area: footer;}
+
+a{}
+
+body{
+    background-color:lightgray;
+    
+    
+}
